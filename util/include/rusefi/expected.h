@@ -56,6 +56,8 @@ struct expected {
 	{
 	}
 
+	constexpr expected() = default;
+
 	// Implicit conversion operator to bool, so you can do things like if (myResult) { ... }
 	constexpr explicit operator bool() const {
 		return Valid;
